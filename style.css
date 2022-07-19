@@ -358,6 +358,85 @@ body{
 
 
 
+/* Featured Product Banner Section Design Starts */
+
+
+.featured-products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner-featured-products{
+    width: 1110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.left-featured-products{
+    width: 404px;
+}
+
+.left-featured-products > img{
+    width: 100%;
+}
+
+.right-featured-products{
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.right-featured-products > h2{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.right-featured-products > p{
+    width: 500px;
+    font-size: 16px;
+    font-weight: 700;
+    color:#6C6C6C;
+    line-height: 28px;
+    padding: 16px 0;
+}
+
+.right-featured-products > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-featured-products > a > ion-icon{
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+
+
+
+/* Featured Product Banner Section Design Ends */
+
+
+
+
+
+
 
 
 
@@ -398,6 +477,11 @@ body{
 
     /* for Popular Collection Section */
     .inner-popular-collection{
+        width: calc(100% - 30px);
+    }
+
+    /* for Featured Product Banner Section */
+    .inner-featured-products{
         width: calc(100% - 30px);
     }
 }
@@ -472,6 +556,36 @@ body{
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         padding-bottom: 32px;
+    }
+
+    /* for Featured Product Banner Section */
+    .inner-featured-products{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .left-featured-products{
+        width: calc(100% - 60px);
+    }
+
+    .right-featured-products{
+        width: calc(100% - 30px);
+        align-items: center;
+    }
+
+    .right-featured-products > h2{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .right-featured-products > p{
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .right-featured-products > a{
+        margin-bottom: 30px;
     }
 }
 
