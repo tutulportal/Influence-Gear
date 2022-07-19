@@ -426,11 +426,74 @@ body{
     font-size: 20px;
     margin-left: 8px;
 }
-
-
-
-
 /* Featured Product Banner Section Design Ends */
+
+
+
+
+
+
+/* footer section design Starts */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0A0826;
+}
+
+.inner-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.inner-footer > h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.inner-footer > p{
+    text-align: center;
+    padding: 3px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #D9DBE1;
+}
+
+.social{
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social > span{
+    background-color: rgba(255,255,255,0.1);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.social > span:last-child{
+    margin-right: 0;
+}
+
+.social > span > ion-icon{
+    color: #fff;
+    font-size: 18px;
+}
+/* footer section design Ends */
 
 
 
@@ -613,5 +676,28 @@ body{
     .product-card{
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
+    }
+
+    /* for Footer Section */
+    .inner-footer > h2{
+        font-size: 16px;
+    }
+
+    .inner-footer > p{
+        font-size: 12px;
+    }
+
+    .social{
+        margin-top: 10px;
+    }
+
+    .social > span{
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+    }
+
+    .social > span > ion-icon{
+        font-size: 14px;
     }
 }
