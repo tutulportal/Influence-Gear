@@ -126,6 +126,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 69px;
 }
 
 
@@ -187,6 +188,52 @@
 
 
 
+/* Companies Section Design Starts */
+
+.companies{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner-companies{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.devider{
+    width: 1110px;
+    height: 1px;
+    background-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);;
+}
+
+.company-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 62px;
+}
+
+.company-list > img{
+    margin-right: 30.5px;
+    margin-left: 30.5px;
+}
+
+
+/* Companies Section Design Ends */
+
+
+
+
+
+
+
 
 
 
@@ -218,6 +265,12 @@
     .inner-top-banner{
         width: calc(100% - 32px);
     }
+
+    /* for Companies Section */
+    .inner-companies{
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 @media only screen and (max-width: 1023px){
@@ -248,6 +301,7 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        padding-bottom: 50px;
     }
 
     .left-top-banner{
@@ -261,6 +315,23 @@
 
     .left-top-banner > p{
         text-align: center;
+    }
+
+    /* for Companies Section */
+    .devider{
+        display: none;
+    }
+
+    .company-list{
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    .company-list > img{
+        width: 3.5em;
+        padding: 12px 0;
+        margin: 0 15px;
     }
 }
 
